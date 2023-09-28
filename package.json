@@ -1,0 +1,30 @@
+{
+  "name": "spatialedge-knowledge",
+  "version": "1.0.0",
+  "description": "Spatialedge Knowledge Sharing Platform",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "mkdocs build -f src/mkdocs.yml -d ../dist"
+  },
+  "dependencies": {
+    "connect-memjs": "^0.2.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0",
+    "require-environment-variables": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/chorosworks/spatialedge-knowledge.git"
+  },
+  "author": "Philip Perold",
+  "homepage": "https://bitbucket.org/chorosworks/spatialedge-knowledge#readme"
+}
